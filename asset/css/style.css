@@ -4,42 +4,55 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
 }
+
 img {
     max-width: 100%;
 }
-.text-center{
-    text-align: center;
+
+.list-unstyled{
+    list-style: none;
 }
-.text-start{
-    text-align:start;
+
+.text-start {
+    text-align: start;
 }
-.align-items-start{
+
+.align-items-start {
     align-items: flex-start;
 }
-.p-y{
-    padding: 1rem 0;
+
+.p-y {
+    padding: 2rem 0;
 }
-.m-y{
+
+.m-y {
     margin: 1rem 0;
 }
-.positionR{
+
+.positionR {
     position: relative;
     top: 4rem;
 }
+.border{
+    border: 1px solid gray;
+}
+
 nav {
     a {
         text-decoration: none;
         color: black;
     }
 }
-:root{
-    --db-primary:#0061ff;
-    --db-secondary:#b4d0e7;
-    --db-white:#ffffff;
-    --db-black:#000000;
+
+:root {
+    --db-primary: #0061ff;
+    --db-secondary: #b4d0e7;
+    --db-white: #ffffff;
+    --db-black: #000000;
 }
 
 
@@ -73,24 +86,28 @@ nav {
         }
     }
 }
-.debug [class^=col-]{
+
+.debug [class^=col-] {
     background-color: aqua;
     min-height: 20px;
 }
-.debug .jumbotron{
-height: 50px;
+
+.debug .jumbotron {
+    height: 50px;
 }
 
 /* #endregion debug */
 
-.conteinerL{
+.conteinerL {
     width: 70%;
     margin: auto;
 }
-.conteinerS{
+
+.conteinerS {
     width: 60%;
     margin: auto;
 }
+
 .d-flex {
     display: flex;
 }
@@ -98,23 +115,29 @@ height: 50px;
 .row {
     display: flex;
 }
-.col-4{
-width: calc( (100% / 12) * 4);
+
+.col-4 {
+    width: calc((100% / 12) * 4);
 }
-.col-8{
-    width: calc( (100% / 12) * 8);
-    }
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
 /* #region header*/
-.app_header{
+.app_header {
     margin: 0 1rem;
 }
-.leftMenu, .rightMenu {
+
+.leftMenu,
+.rightMenu {
     display: flex;
     align-items: center;
     width: 50%;
     padding: 1rem 0;
-    nav{
-        a{
+
+    nav {
+        a {
             padding: 0 1rem;
         }
     }
@@ -134,7 +157,8 @@ width: calc( (100% / 12) * 4);
     display: inline-block;
     background-color: var(--db-primary);
     padding: .2rem 0;
-    a{
+
+    a {
         color: white;
     }
 }
@@ -143,22 +167,40 @@ width: calc( (100% / 12) * 4);
 /* #endregion header*/
 
 /* #region main*/
-.jumbotron{
+.jumbotron {
     background-color: var(--db-secondary);
-.conteinerL{
-    h1{
-        font-size: 2.5rem;
+
+    .conteinerL {
+        h1 {
+            font-size: 2.5rem;
+        }
     }
-}
 
 }
-.arrowlink{
+
+.arrowlink {
     font-size: 2rem;
-    a{
+
+    a {
         color: var(--db-black);
+    }
+}
+.users{
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: .5rem;
+
+}
+.supply{
+    h3{
+        padding: 1.5rem;
+    }
+    .price, .subscription{
+        padding: .2rem;
+    }
+    .subscription{
+        color: grey;
     }
 }
 
 /* #endregion main*/
-
-
