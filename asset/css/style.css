@@ -34,6 +34,9 @@ img {
 .align-items-start {
     align-items: flex-start;
 }
+h3{
+    padding: 1rem 0;
+}
 .input{
     .month, .annual{
         display: inline-block;
@@ -45,11 +48,12 @@ img {
     padding: 2rem 0;
 }
 .p2-y{
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .txt{
     font-size: .75rem;
+    padding: 1rem 0;
 }
 .margin-top-negativ{
     margin-top: -7rem;
@@ -74,6 +78,14 @@ nav {
     --db-secondary: #b4d0e7;
     --db-white: #ffffff;
     --db-black: #000000;
+    --db-des-Logo:#a2d39b;
+    --db-des-Logo-Bord:#d1e9cd;
+    --db-asu-Logo:#61082b;
+    --db-uf-Logo:#0093ce;
+    --db-topps-Logo:#ff1c1c;
+    --db-world-Logo:#d5001f;
+    --db-lonely-Logo:#0d2481;
+    --db-Clear-Logo:#ffd830;
 }
 section{
     padding: 1rem;
@@ -99,6 +111,7 @@ section{
 .align-strech{
     align-items: stretch;
 }
+
 [class^="col-"]{
     padding: 1rem;
 }
@@ -121,8 +134,22 @@ section{
 .col-12{
     width: 100%;
 }
-/* #endregion commun */
 
+/* #endregion commun */
+.call-to-action{
+    text-align: center;
+    background-color: var(--db-primary);
+    color: var(--db-white);
+    padding: .5rem 0;
+    margin: 1rem 0;
+}
+.call-to-action-negative{
+    text-align: center;
+    border: 1px solid black;
+    color: var(--db-black);
+    padding: .5rem 0;
+    margin: 1rem 0;
+}
 
 /* #region debug*/
 .debug * {
@@ -178,20 +205,7 @@ section{
         }
     }
 }
-.call-to-action{
-    text-align: center;
-    background-color: var(--db-primary);
-    color: var(--db-white);
-    padding: .5rem 0;
-    margin: 1rem 0;
-}
-.call-to-action-negative{
-    text-align: center;
-    border: 1px solid black;
-    color: var(--db-black);
-    padding: .5rem 0;
-    margin: 1rem 0;
-}
+
 .plan{
     background-color: var(--db-white);
 }
@@ -206,6 +220,7 @@ section{
         color: var(--db-black);
     }
 }
+/* #region card section */
 .users{
     text-align: center;
     border-bottom: 1px solid;
@@ -220,9 +235,6 @@ section{
 }
 
 .supply{
-    h3{
-        padding: 1rem 0;
-    }
     .price, .subscription{
         padding: .2rem;
     }
@@ -281,6 +293,21 @@ hr{
         }
     }
 }
+/* #endregion card section */
+
+.Teams{
+    .conteinerS{
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            margin: 1rem 0;
+            padding: 2rem 0;
+        }
+        a{
+            font-size: .t5rem;
+        }
+    }
+}
 .Logos{
     display: flex;
 }
@@ -289,8 +316,15 @@ hr{
     flex-wrap: wrap;
     width: calc(100% / 3);
 }
+.leftL:first-child{
+    background-color:var(--db-des-Logo);
+}
+leftL > .square{
+    background-color: green;
+}
 .square{
     width: 50%;
     aspect-ratio: 1;
+    padding: 2rem;
 }
 /* #endregion main*/
