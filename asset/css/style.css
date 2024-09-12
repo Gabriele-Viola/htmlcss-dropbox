@@ -304,7 +304,7 @@ hr{
             padding: 2rem 0;
         }
         a{
-            font-size: .t5rem;
+            font-size: .5rem;
         }
     }
 }
@@ -316,15 +316,57 @@ hr{
     flex-wrap: wrap;
     width: calc(100% / 3);
 }
-.leftL:first-child{
-    background-color:var(--db-des-Logo);
+.LeftL{
+    .square:first-child{
+        background-color: var(--db-des-Logo);
+        border: 1rem solid var(--db-des-Logo-Bord);
+    }
+    .square:nth-child(2){
+        background-color: var(--db-asu-Logo);
+
+    }
+    .square:nth-child(3){
+        background-color: var(--db-uf-Logo);
+        align-items: center;
+        img{
+            height: 40%;
+        }
+
+    }
+    .square:nth-child(4){
+        background-color: var(--db-topps-Logo);
+
+    }
 }
-leftL > .square{
-    background-color: green;
+.RightL{
+    .square:first-child{
+        background-color: var(--db-world-Logo);
+    }
+    .square:nth-child(2){
+        background-color: var(--db-secondary);
+
+    }
+    .square:nth-child(3){
+        background-color: var(--db-lonely-Logo);
+
+
+    }
+    .square:nth-child(4){
+        background-color: var(--db-Clear-Logo);
+
+    }
 }
+
+
 .square{
+    display: flex;
     width: 50%;
     aspect-ratio: 1;
     padding: 2rem;
+
+
+}
+.white-img{
+    color: red
 }
 /* #endregion main*/
