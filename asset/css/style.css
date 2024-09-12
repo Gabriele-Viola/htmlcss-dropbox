@@ -1,4 +1,5 @@
-/* common */
+/* #region commun */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +9,20 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #dedede;
 }
 
 img {
     max-width: 100%;
 }
+.align-center{
+    align-items: center;
+}
 
 .list-unstyled{
     list-style: none;
+}
+.empty{
+    margin: 1rem 0;
 }
 
 .text-start {
@@ -28,15 +34,26 @@ img {
 .align-items-start {
     align-items: flex-start;
 }
-
-.p-y {
+.input{
+    .month, .annual{
+        display: inline-block;
+        padding-right:2rem;
+        font-size: .75rem;
+    }
+}
+.p4-y {
     padding: 2rem 0;
 }
-
-.m-y {
-    margin: 1rem 0;
+.p2-y{
+    padding: 1rem;
 }
 
+.txt{
+    font-size: .75rem;
+}
+.margin-top-negativ{
+    margin-top: -7rem;
+}
 .positionR {
     position: relative;
     top: 4rem;
@@ -58,15 +75,15 @@ nav {
     --db-white: #ffffff;
     --db-black: #000000;
 }
-.conteinerL {
-    width: 70%;
-    margin: auto;
-}
 section{
     padding: 1rem;
 }
+.conteinerL {
+    width: 80%;
+    margin: auto;
+}
 .conteinerS {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -85,20 +102,26 @@ section{
 [class^="col-"]{
     padding: 1rem;
 }
+.col-{
+    width: calc(100% / 5);
+}
 .col-4 {
     width: calc((100% / 12) * 4);
     padding: 1rem;
 }
-.col-{
-    width: calc(100% / 5);
+.col-5{
+    width: calc((100% / 12) * 5);
 }
-
+.col-7{
+    width: calc((100% / 12) * 7);
+}
 .col-8 {
     width: calc((100% / 12) * 8);
 }
 .col-12{
     width: 100%;
 }
+/* #endregion commun */
 
 
 /* #region debug*/
@@ -122,29 +145,24 @@ section{
 
         .menu{
             margin: 0 0 -1rem;
-            /* a{
-                padding: 0 0 1rem;
-            } */
+            font-size: .75rem;
+            a{
+                padding: 0 .25rem;
+            }
         }
     }
 }
-
-
-
 .logo {
     width: 20%;
 }
-
-
-
-
 .cta {
-
+    font-size: .75rem;
     background-color: var(--db-primary);
-    padding: .2rem 0;
-
+    padding: .2rem;
     a {
         color: white;
+        background-color: var(--db-primary);
+        text-decoration: none;
     }
 }
 
@@ -154,12 +172,32 @@ section{
 /* #region main*/
 .jumbotron {
     background-color: var(--db-secondary);
-
     .conteinerL {
         h1 {
             font-size: 2.5rem;
         }
     }
+}
+.call-to-action{
+    text-align: center;
+    background-color: var(--db-primary);
+    color: var(--db-white);
+    padding: .5rem 0;
+    margin: 1rem 0;
+}
+.call-to-action-negative{
+    text-align: center;
+    border: 1px solid black;
+    color: var(--db-black);
+    padding: .5rem 0;
+    margin: 1rem 0;
+}
+.plan{
+    background-color: var(--db-white);
+}
+
+.m-1{
+    margin: 2rem 0 -1rem;
 }
 .arrowlink {
     font-size: 2rem;
@@ -183,18 +221,21 @@ section{
 
 .supply{
     h3{
-        padding: 1.5rem 0;
+        padding: 1rem 0;
     }
     .price, .subscription{
         padding: .2rem;
     }
+    .price{
+        font-weight: bold;
+    }
     .subscription{
         color: grey;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .list-unstyled{
         li{
-            padding: 1rem 0;
+            padding: .5rem 0;
         }
     }
 }
@@ -203,11 +244,11 @@ hr{
 }
 .highlights{
     h4{
-        padding: 1rem 0;
+        padding: .5rem 0;
     }
     .list-unstyled{
         li{
-            padding: 1rem 0;
+            padding: .5rem 0;
             i{
                 color: var(--db-primary);                
             }
