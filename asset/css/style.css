@@ -22,7 +22,9 @@ img {
 .text-start {
     text-align: start;
 }
-
+.justify-btw{
+    justify-content: space-between;
+}
 .align-items-start {
     align-items: flex-start;
 }
@@ -86,6 +88,9 @@ section{
 .col-4 {
     width: calc((100% / 12) * 4);
     padding: 1rem;
+}
+.col-{
+    width: calc(100% / 5);
 }
 
 .col-8 {
