@@ -18,9 +18,9 @@
     <title>boolbox</title>
 </head>
 
-<body class="debu">
+<body class="debug">
     <header class="app_header d-flex">
-        <div class="leftMenu">
+        <div class="left">
             <div class="logo">
                 <a href="#">
                     <img src="./asset/img/logo-small.png" alt="">
@@ -32,21 +32,22 @@
                 <a href="#">Piani e Prezzi</a>
             </nav>
         </div>
-        <div class="rightMenu">
+        <div class="right">
             <nav class="menu">
                 <a href="#">Supporto</a>
                 <a href="#">Contatta l'ufficio vendite</a>
                 <a href="#">Accedi</a>
-                <div class="cta">
-                    <a href="#">Inizia</a>
             </nav>
+            <div class="cta">
+                <a href="#">Inizia</a>
+            </div>
         </div>
 
     </header>
     <!-- /.app_header -->
     <main class="app_main">
         <section class="jumbotron">
-            <div class="conteinerL positionR">
+            <div class="conteinerL ">
                 <h1>
                     Tutto ciò che ti serve per il lavoro, in un unico posto
                 </h1>
@@ -88,7 +89,7 @@
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <div class="card border">
+                        <div class="card border d-flex">
                             <div class="users">
                                 <i class="fa-solid fa-user"></i>
                                 <span>
@@ -96,55 +97,66 @@
                                 </span>
                             </div>
                             <!-- users -->
-                            <div class="description">
-                                <div class="supply">
-                                    <h3>
-                                        Professional
-                                    </h3>
-                                    <div class="price">
-                                        € 12.00
+                            <div class="top">
+                                <div class="description">
+                                    <div class="supply">
+                                        <h3>
+                                            Professional
+                                        </h3>
+                                        <div class="price">
+                                            € 12.00
+                                        </div>
+                                        <div class="subscription">
+                                            /mese
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="user">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>1 Utente</span>
+                                            </li>
+                                            <li class="storage">
+                                                <i class="fa-solid fa-folder"></i>
+                                                <span>5 TB di spazio di archiviazione sicuro</span>
+                                            </li>
+                                            <li class="share">
+                                                <i class="fa-solid fa-share-nodes"></i>
+                                                <span>Funzioni di produtività premium e condivisione file semplice
+                                                    sicura</span>
+                                            </li>
+                                        </ul>
+                                        <div class="middle">
+                                            <div class="freetry">
+                                                prova gratis per 30 giorni
+                                            </div>
+                                            <div class="else">
+                                                <span>oppure <a href="#">acquista ora</a></span>
+                                            </div>
+                                        </div>
+                                        <!-- /.middle -->
+
+                                        <hr>
                                     </div>
-                                    <div class="subscription">
-                                        /mese
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li class="user">
-                                            <i class="fa-solid fa-user"></i>
-                                            <span>1 Utente</span>
-                                        </li>
-                                        <li class="storage">
-                                            <i class="fa-solid fa-folder"></i>
-                                            <span>5 TB di spazio di archiviazione sicuro</span>
-                                        </li>
-                                        <li class="share">
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                            <span>Funzioni di produtività premium e condivisione file semplice
-                                                sicura</span>
-                                        </li>
-                                    </ul>
-                                    <div class="freetry">
-                                        prova gratis per 30 giorni
-                                    </div>
-                                    <div class="else">
-                                        <span>oppure <a href="#">acquista ora</a></span>
-                                    </div>
-                                    <hr>
+                                    <!-- supply -->
                                 </div>
-                                <!-- supply -->
-                                <div class="highlights">
-                                    <h4>Punti salienti del piano</h4>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Invia file fino a 100GB con Dropbox Transfert</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Cartelle offline su dispositivi mobili</span>
-                                        </li>
-                                    </ul>
+                                <div class="bottom">
+                                    <div class="highlights">
+                                        <h4>Punti salienti del piano</h4>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Invia file fino a 100GB con Dropbox Transfert</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Cartelle offline su dispositivi mobili</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- highlights -->
                                 </div>
-                                <!-- highlights -->
+
+
+
                             </div>
                             <!-- description -->
 
@@ -164,66 +176,82 @@
                                 </span>
                             </div>
                             <!-- users -->
-                            <div class="description">
-                                <div class="supply">
-                                    <h3>
-                                        Advanced
-                                    </h3>
-                                    <div class="price">
-                                        € 18.00
+                            <div class="top">
+                                <div class="description">
+                                    <div class="supply">
+                                        <h3>
+                                            Advanced
+                                        </h3>
+                                        <div class="price">
+                                            € 18.00
+                                        </div>
+                                        <div class="subscription">
+                                            /urente/mese
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="user">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>3 o più Utenti</span>
+                                            </li>
+                                            <li class="storage">
+                                                <i class="fa-solid fa-folder"></i>
+                                                <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
+                                            </li>
+                                            <li class="share">
+                                                <i class="fa-solid fa-share-nodes"></i>
+                                                <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i
+                                                    file
+                                                    del tuo team
+                                                </span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="subscription">
-                                        /urente/mese
+                                    <div class="middle">
+                                        <div class="freetry">
+                                            prova gratis per 30 giorni
+                                        </div>
+                                        <div class="else">
+                                            <span>oppure <a href="#">acquista ora</a></span>
+                                        </div>
                                     </div>
-                                    <ul class="list-unstyled">
-                                        <li class="user">
-                                            <i class="fa-solid fa-user"></i>
-                                            <span>3 o più Utenti</span>
-                                        </li>
-                                        <li class="storage">
-                                            <i class="fa-solid fa-folder"></i>
-                                            <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
-                                        </li>
-                                        <li class="share">
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                            <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file
-                                                del tuo team
-                                            </span>
-                                        </li>
-                                    </ul>
-                                    <div class="freetry">
-                                        prova gratis per 30 giorni
-                                    </div>
-                                    <div class="else">
-                                        <span>oppure <a href="#">acquista ora</a></span>
-                                    </div>
+                                    <!-- /.middle -->
                                     <hr>
                                 </div>
                                 <!-- supply -->
-                                <div class="highlights">
-                                    <h4>Punti salienti del piano</h4>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Nessun limite di spazio per i file</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Cartelle offline su dispositivi mobili</span>
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
-                                        </li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <span>Possibilità di inserire nuovi membri del team</span>
-                                        </li>
-                                        <i class="fa-solid fa-check"></i>
-                                        <span>Gestione dei permessi in base ai ruoli</span>
-                                        </li>
-                                    </ul>
+                                <!-- /.top -->
+                                <div class="bottom">
+                                    <div class="highlights">
+                                        <h4>Punti salienti del piano</h4>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Nessun limite di spazio per i file</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Cartelle offline su dispositivi mobili</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                            </li>
+
+                                            <!-- Gestione dei permessi in base ai ruoli -->
+                                        </ul>
+                                    </div>
+                                    <!-- highlights -->
                                 </div>
-                                <!-- highlights -->
+                                <!-- /.bottom -->
+
+
                             </div>
                             <!-- description -->
 
@@ -298,13 +326,94 @@
 
                     </div>
                     <!-- /.col-4 -->
-
+                    <div class="col-12">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum saepe beatae, blanditiis vitae laborum autem nihil consectetur at temporibus perspiciatis, doloribus voluptatum! Architecto harum placeat id, debitis unde iste.
+                    </div>
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.conteinerS -->
         </section>
         <!-- /.plan -->
+         <section class="Partners">
+            <div class="conteinerS d-flex">
+                <div class="col-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi repellendus quo nobis laudantium reiciendis suscipit ab expedita natus, aut dicta rem cupiditate quod vel cum minus voluptates. Nesciunt, aliquid!
+                </div>
+                <!-- /.col-8 -->
+                <div class="col-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus saepe, iste blanditiis qui quasi modi fugiat excepturi? Laudantium obcaecati quibusdam voluptatem nisi ullam incidunt rem sint mollitia corrupti! Officia.
+                </div>
+                <!-- /.col-4 -->
+            </div>
+            <!-- /.conteinerS -->
+         </section>
+         <!-- /.Partners -->
+          <section class="Operation">
+            <div class="conteinerS">
+                <h2>Esegui più oprazioni con Dropbox Business</h2>
+                <div class="row">
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit quas temporibus sunt nobis dolores nulla saepe animi voluptatum, molestias minima rem pariatur ratione voluptate quidem in odio odit. Perferendis!
+                    </div>
+                    <!-- /.col-4 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.conteinerS -->
+          </section>
+          <!-- /.Operation -->
+           <section class="Teams">
+            <div class="conteinerS">
+                <h2>
+                    Più di 500.000 team utilizzano <br> Dropbox Business
+                </h2>
+                <a href="#">Scopri di più su i nostri clienti</a>
+            </div>
+            <!-- /.conteinerS -->
+           </section>
+           <!-- /.Teams -->
+            <section class="Logos">
+                <div class="LeftL">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <!-- /.LeftL -->
+                <div class="CenterL">
+
+                </div>
+                <!-- /.CenterL -->
+                <div class="RightL">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <!-- /.RightL -->
+            </section>
+            <!-- /.Logos -->
     </main>
     <!-- /.app_main -->
     <footer class="app_footer"></footer>

@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #dedede;
 }
 
 img {
@@ -54,57 +56,13 @@ nav {
     --db-white: #ffffff;
     --db-black: #000000;
 }
-
-
-/* #region debug*/
-.debug * {
-    border: 1px dashed;
-}
-
-.debug header {
-    background-color: red;
-
-    .leftMenu,
-    .rightMenu {
-        background-color: blue;
-    }
-
-    .leftMenu,
-    .rightMenu {
-        display: flex;
-        width: 50%;
-
-        .menu {
-            width: 80%;
-
-            background-color: green;
-        }
-
-        .logo {
-            width: 20%;
-            background-color: deeppink;
-        }
-    }
-}
-
-.debug [class^=col-] {
-    background-color: aqua;
-    min-height: 20px;
-}
-.debug .card{
-    border: 1px solid red;
-}
-.debug .jumbotron {
-    height: 50px;
-}
-
-/* #endregion debug */
-
 .conteinerL {
     width: 70%;
     margin: auto;
 }
-
+section{
+    padding: 1rem;
+}
 .conteinerS {
     width: 60%;
     margin: auto;
@@ -116,13 +74,15 @@ nav {
 
 .row {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     margin:0 -1rem;
 }
 .align-strech{
     align-items: stretch;
 }
-
+[class^="col-"]{
+    padding: 1rem;
+}
 .col-4 {
     width: calc((100% / 12) * 4);
     padding: 1rem;
@@ -131,38 +91,50 @@ nav {
 .col-8 {
     width: calc((100% / 12) * 8);
 }
+.col-12{
+    width: 100%;
+}
+
+
+/* #region debug*/
+.debug * {
+    border: 1px dashed;
+}
+
+/* #endregion debug */
+
+
 
 /* #region header*/
 .app_header {
-    margin: 0 1rem;
-}
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px #a1a1a1;
+    .left, .right{
+        display: flex;
+        gap: 1rem;
 
-.leftMenu,
-.rightMenu {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    padding: 1rem 0;
-
-    nav {
-        a {
-            padding: 0 1rem;
+        .menu{
+            margin: 0 0 -1rem;
+            /* a{
+                padding: 0 0 1rem;
+            } */
         }
     }
 }
+
+
 
 .logo {
     width: 20%;
 }
 
-.rightMenu {
-    justify-content: end;
-    text-align: end;
-}
+
 
 
 .cta {
-    display: inline-block;
+
     background-color: var(--db-primary);
     padding: .2rem 0;
 
@@ -183,9 +155,7 @@ nav {
             font-size: 2.5rem;
         }
     }
-
 }
-
 .arrowlink {
     font-size: 2rem;
 
@@ -208,7 +178,7 @@ nav {
 
 .supply{
     h3{
-        padding: 1.5rem;
+        padding: 1.5rem 0;
     }
     .price, .subscription{
         padding: .2rem;
@@ -222,20 +192,9 @@ nav {
             padding: 1rem 0;
         }
     }
-    .freetry{
-        text-align: center;
-        background-color: var(--db-primary);
-        color: var(--db-white);
-        padding: .5rem 0;
-        margin: 1rem 0;
-    }
-    .else{
-        margin: 1rem 0;
-        padding: 1rem 0;
-    }
-    hr{
-        width: 20%;
-    }
+}
+hr{
+    width: 20%;
 }
 .highlights{
     h4{
@@ -250,5 +209,42 @@ nav {
         }
     }
 }
+.card{
+    flex-direction: column;
+    .top{
+        flex-grow: 300px;
+        font-size: small;
+    }
+    .bottom{
 
+
+        padding: 1rem;
+    }
+    .middle{
+        flex-basis: 3rem;
+        .freetry{
+            text-align: center;
+            background-color: var(--db-primary);
+            color: var(--db-white);
+            padding: .5rem 0;
+            margin: 1rem 0;
+        }
+        .else{
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+    }
+}
+.Logos{
+    display: flex;
+}
+.LeftL, .RightL, .CenterL{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+}
+.square{
+    width: 50%;
+    aspect-ratio: 1;
+}
 /* #endregion main*/
