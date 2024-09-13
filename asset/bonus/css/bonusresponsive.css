@@ -555,12 +555,20 @@ svg{
             margin: auto;
             justify-content: space-evenly;
             .icons{
+                font-size: 1rem;
+            }
+        }
+    }
+    .jumbotron {
+        .conteinerL {
+            h1 {
                 font-size: 1.5rem;
             }
         }
     }
-
-
-
+    .col-m-12{
+        
+    }
 }
+
 
