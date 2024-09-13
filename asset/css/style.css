@@ -152,10 +152,29 @@ nav {
         color: var(--db-white);
     }
 }
+.call-to-action:hover{
+    text-align: center;
+    background-color:rgb(0, 8, 231);
+    color: var(--db-white);
+    padding: .5rem 0;
+    margin: 1rem 0;
+    a{
+        text-decoration: none;
+        color: var(--db-white);
+    }
+}
+
 .call-to-action-negative{
     text-align: center;
     border: 1px solid black;
     color: var(--db-black);
+    padding: .5rem 0;
+    margin: 1rem 0;
+}
+.call-to-action-negative:hover{
+    text-align: center;
+    background-color: var(--db-black);
+    color: var(--db-white);
     padding: .5rem 0;
     margin: 1rem 0;
 }
@@ -171,6 +190,9 @@ nav {
 
 /* #region header*/
 .app_header {
+    position: sticky;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     padding: 1rem;
     background-color: white;
@@ -194,10 +216,20 @@ nav {
 .cta {
     font-size: .75rem;
     background-color: var(--db-primary);
-    padding: .2rem;
+    padding: .2rem .5rem;
     a {
         color: white;
         background-color: var(--db-primary);
+        text-decoration: none;
+    }
+}
+.cta:hover {
+    font-size: .75rem;
+    background-color:rgb(0, 8, 231);
+    padding: .2rem .5rem;
+    a {
+        color: white;
+        background-color:rgb(0, 8, 231);
         text-decoration: none;
     }
 }
@@ -257,6 +289,7 @@ nav {
     .list-unstyled{
         li{
             padding: .5rem 0;
+            gap: .5rem;
         }
     }
 }
@@ -375,19 +408,19 @@ hr{
         font-size: .5rem;
     }
 }
-
+svg{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .square{
     display: flex;
-    width: 50%;
+    flex-basis: 50%;
+    align-items: center;
     aspect-ratio: 1;
     padding: 2rem;
-    .filter{
-        display: flex;
-        /* width: 100%; */
-        aspect-ratio: 1;
-        fill: white;
-    };
+    fill: var(--db-white);
+
 }
 .bring{
     background-color: var(--db-secondary);
