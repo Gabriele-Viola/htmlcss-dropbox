@@ -215,6 +215,19 @@ nav {
         }
     }
 }
+.mobile{
+    display: none;
+}
+.app_header {
+    .text{        
+        display: inline-block;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+
 .app_header{
     .menu{
         a:hover{
@@ -526,3 +539,28 @@ svg{
     }
 }
 /* #endregion footer*/
+
+@media screen and (max-width: 568px){
+    .app_header {
+      display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        .menu{
+            display: flex;
+            width: calc(100% / 3);
+            margin: auto;
+            justify-content: space-evenly;
+            .icons{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+
+}
+
