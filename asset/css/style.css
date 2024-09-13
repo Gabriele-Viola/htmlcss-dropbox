@@ -461,6 +461,26 @@ svg{
 .col-:first{
     align-items: stretch;
 }
+.questionbox:hover{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 1rem;
 
+    .question{
+        font-size: .75rem;
+    }
+}
+.answerbox{
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 1rem;
+
+    .answer{
+        font-size: .75rem;
+    }
+}
 
 /* #endregion main*/
