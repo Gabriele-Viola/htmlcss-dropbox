@@ -411,9 +411,6 @@ hr{
 svg{
     max-width: 100%;
     max-height: 100%;
-    path{
-        /* fill: var(--db-white); */
-    }
 }
 
 .square{
@@ -452,6 +449,7 @@ svg{
 }
 .q_a:last-child{
     border-bottom: 1px solid black;
+    margin-bottom: 2rem;
 }
 .language{
     display: flex;
@@ -471,8 +469,10 @@ svg{
         font-size: .75rem;
     }
 }
-.answerbox{
+.q_a .answerbox{
     display: none;
+}
+.q_a:hover .answerbox{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid black;
@@ -480,6 +480,12 @@ svg{
 
     .answer{
         font-size: .75rem;
+        width: 90%;
+    }
+}
+.q_a:hover{
+    .questionbox{
+        display: none;
     }
 }
 
