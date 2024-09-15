@@ -538,9 +538,39 @@ svg{
         padding-right: .5rem;
     }
 }
+.desktopoff{
+    display: none;
+}
+
 /* #endregion footer*/
 
 @media screen and (max-width: 568px){
+
+    .D-inlineB{
+        display: inline-block;
+    }
+    .align-center{
+        align-items: center;
+    }
+    .f-direction-columnM{
+        flex-direction: column;
+    }
+    .dflexM{
+        display: flex;
+    }
+    .marginautoM{
+        margin: auto;
+    }
+    .mobileon{
+        display: flex;
+    }
+    .mobileoff{
+        display: none;
+    }
+    .ReverseRowM{
+        flex-direction: row-reverse;
+        justify-items: flex-st;
+    }
     .app_header {
       display: none;
     }
@@ -567,7 +597,46 @@ svg{
         }
     }
     .col-m-12{
-        
+        width: 100%;
+    }
+    .col-m-6{
+        width: 50%;
+    }
+    .LogosM{
+        .LeftL, .RightL, .CenterL{
+            width: 100%;
+        }
+        .CenterL{
+            .txt{
+                font-size: .75rem;
+            }
+        }
+    }
+    .bring{
+        .col-8{
+            .txt{
+                color: var(--db-bring-txt);
+                
+            }
+        }
+        .col-4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .desktopoff{
+                background-color:var(--db-white);
+                justify-content: center;
+                align-items: center;
+                width: 1000%;
+                aspect-ratio: 1;
+                border-radius: 200px;
+                i{
+                    color: var(--db-secondary);
+                    font-size: 5rem;
+                }
+            }
+            
+        }
     }
 }
 
